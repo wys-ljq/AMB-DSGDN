@@ -2,9 +2,13 @@
 
 ## I. Environment Configuration
 ### 1. Prerequisites
-- Anaconda is installed.
-- The server is equipped with an NVIDIA GPU supporting CUDA 11.7.
-- The AMB-DSGDN project code has been downloaded.
+- Anaconda package management tool has been installed
+- The server is equipped with an NVIDIA GPU supporting CUDA 11.7 (to meet the hardware requirements for model training)
+- AMB-DSGDN project code has been downloaded
+- Experimentally required datasets have been downloaded:
+  - IEMOCAP Dataset
+  - MELD Dataset
+  - Dataset download link: [Google Drive](https://drive.google.com/drive/folders/1J1mvbqQmVodNBzbiOIxRiWOtkP6qqP-K)
 
 ### 2. Operation Steps
 ```bash
@@ -19,7 +23,7 @@ pip install pandas==2.2.0 numpy==1.26.3 thop
 # 3. Navigate to the project directory
 cd AMB-DSGDN
 
-# 4. Grant execution permissions to the scripts
+# 4. Grant execution permission to the scripts
 chmod +x run_iemocap.sh
 chmod +x run_meld.sh
 ```
