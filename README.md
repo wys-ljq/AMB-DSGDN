@@ -41,7 +41,13 @@ chmod +x run_meld.sh
 
 ## 一、环境配置
 ### 1. 前置条件
-已安装Anaconda，服务器配备支持CUDA 11.7的NVIDIA GPU，且已下载AMB-DSGDN项目代码
+- 已安装 Anaconda 包管理工具
+- 服务器配备支持 CUDA 11.7 的 NVIDIA GPU（保证模型训练的硬件需求）
+- 已下载 AMB-DSGDN 项目代码
+- 已下载实验所需数据集：
+  - IEMOCAP 数据集
+  - MELD 数据集
+  - 数据集下载地址：[Google Drive](https://drive.google.com/drive/folders/1J1mvbqQmVodNBzbiOIxRiWOtkP6qqP-K)
 
 ### 2. 操作步骤
 ```bash
@@ -69,3 +75,4 @@ chmod +x run_meld.sh
 # 运行MELD数据集实验
 ./run_meld.sh
 ```
+
