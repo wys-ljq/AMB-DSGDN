@@ -36,7 +36,8 @@ chmod +x run_meld.sh
 
 
 中文说明：
-AMB-DSGDN: Adaptive Modality-Balanced Dynamic Semantic Graph Differential Network for Multimodal Emotion Recognition
+
+# AMB-DSGDN: Adaptive Modality-Balanced Dynamic Semantic Graph Differential Network for Multimodal Emotion Recognition
 
 ## 一、环境配置
 ### 1. 前置条件
