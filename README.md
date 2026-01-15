@@ -33,17 +33,38 @@ chmod +x run_meld.sh
 ./run_meld.sh
 ```
 
-### Key Notes for Translation Consistency:
-1. **Term Standardization**:
-   - "环境配置" → "Environment Configuration" (consistent with technical documentation conventions)
-   - "前置条件" → "Prerequisites" (standard for software setup guides)
-   - "操作步骤" → "Operation Steps" (clear and concise for technical instructions)
-   - "赋予脚本执行权限" → "Grant execution permissions to the scripts" (accurate technical expression)
-2. **Code Preservation**:
-   - All bash commands, package names, version numbers, and script filenames are retained unchanged to ensure functional consistency.
-3. **Grammatical Rigor**:
-   - Passive voice is used for prerequisite descriptions (e.g., "Anaconda is installed") to maintain formality.
-   - Imperative mood is used for operation steps (e.g., "Create and activate...", "Install...") to align with technical documentation norms.
-4. **Cultural Adaptation**:
-   - "服务器配备" → "The server is equipped with" (natural expression in English technical writing)
-   - "数据集实验" → "experiments on the [Dataset Name] dataset" (redundancy avoided while retaining clarity)
+
+
+中文说明：
+AMB-DSGDN: Adaptive Modality-Balanced Dynamic Semantic Graph Differential Network for Multimodal Emotion Recognition
+
+## 一、环境配置
+### 1. 前置条件
+已安装Anaconda，服务器配备支持CUDA 11.7的NVIDIA GPU，且已下载AMB-DSGDN项目代码
+
+### 2. 操作步骤
+```bash
+# 1. 创建并激活conda环境
+conda create -n AMB-DSGDN python=3.10.13 -y
+conda activate AMB-DSGDN
+
+# 2. 安装依赖包
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install pandas==2.2.0 numpy==1.26.3 thop
+
+# 3. 进入项目目录
+cd AMB-DSGDN
+
+# 4. 赋予脚本执行权限
+chmod +x run_iemocap.sh
+chmod +x run_meld.sh
+```
+
+## 二、运行实验
+```bash
+# 运行IEMOCAP数据集实验
+./run_iemocap.sh
+
+# 运行MELD数据集实验
+./run_meld.sh
+```
