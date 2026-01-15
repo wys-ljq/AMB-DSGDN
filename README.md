@@ -5,7 +5,7 @@
 - Anaconda package management tool has been installed
 - The server is equipped with an NVIDIA GPU supporting CUDA 11.7 (to meet the hardware requirements for model training)
 - AMB-DSGDN project code has been downloaded
-- Experimentally required datasets have been downloaded:
+- Create a new data folder in the current directory, download the datasets required for the experiments, and place the datasets in the data folder.:
   - IEMOCAP Dataset
   - MELD Dataset
   - Dataset download link: [Google Drive](https://drive.google.com/drive/folders/1J1mvbqQmVodNBzbiOIxRiWOtkP6qqP-K)
@@ -48,7 +48,7 @@ chmod +x run_meld.sh
 - 已安装 Anaconda 包管理工具
 - 服务器配备支持 CUDA 11.7 的 NVIDIA GPU（保证模型训练的硬件需求）
 - 已下载 AMB-DSGDN 项目代码
-- 已下载实验所需数据集：
+- 在当前目录下新建data文件夹并下载实验所需数据集，把数据集放在data文件夹下：
   - IEMOCAP 数据集
   - MELD 数据集
   - 数据集下载地址：[Google Drive](https://drive.google.com/drive/folders/1J1mvbqQmVodNBzbiOIxRiWOtkP6qqP-K)
